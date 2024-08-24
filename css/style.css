@@ -1,0 +1,211 @@
+/* Sticky navbar */
+.navbar {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: none !important;
+    outline: none !important;
+    content: none !important;
+}
+
+.navbar-brand>span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    letter-spacing: 1.5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    margin-top: 5px;
+    left: 0;
+    bottom: 0;
+    background: #00d084;
+    /* Adjust as needed */
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+
+.navbar-toggler>i {
+    font-size: 1.8rem;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    transition: all 0.3s;
+    outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+.nav-item .nav-link,
+.dropdown-menu .dropdown-item {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2a2a2a;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border: transparent;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu {
+    transition: 0.1s ease;
+    top: 100% !important
+}
+
+.dropdown-menu.show {
+    top: 60 px;
+}
+
+
+/* banner start  */
+.single-banner {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15%;
+    position: relative;
+}
+
+.feature-content {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: all 0.5s;
+}
+
+.feature-content img {
+    width: 85px;
+}
+
+.feature-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+input,
+input:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.form-control {
+    padding: 2rem 0 !important;
+}
+
+.btn-search {
+    background: #28a745 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.btn-search::before,
+.btn-search:hover,
+.btn-search:focus {
+    background: #28a745 !important;
+    box-shadow: none !important;
+}
+
+button::before,
+button:hover,
+button:focus {
+    box-shadow: none !important;
+}
+
+/* Tasbih counter  */
+
+
+.counter-container {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.counter-display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFDF00;
+}
+
+.btn-tasbih-add::before,
+.btn-tasbih-add:hover,
+.btn-tasbih-add:focus {
+    background: #28a745 !important;
+}
+
+.btn-tasbih-min {
+    position: absolute !important;
+    background: #0693e3 !important;
+    top: 32%;
+    left: 42%;
+    transform: translate(50%, 50%);
+}
+
+.btn-tasbih-min::before,
+.btn-tasbih-min:hover,
+.btn-tasbih-min:focus {
+    background: #0693e3 !important;
+}
+
+.btn-reset {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.btn-reset::before,
+.btn-reset:hover,
+.btn-reset:focus {
+    background: #dc3545 !important;
+}
