@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-// ==================== CARD  ===============================  //
+  // ==================== CARD  ===============================  //
   const name = document.getElementById("name");
   const cardnumber = document.getElementById("cardnumber");
   const expirationdate = document.getElementById("expirationdate");
@@ -78,16 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
         regex: "^(5[1-5]\\d{0,2}|22[2-9]\\d{0,1}|2[3-7]\\d{0,2})\\d{0,12}",
         cardtype: "mastercard",
       },
-      // {
-      //     mask: '0000-0000-0000-0000',
-      //     regex: '^(5019|4175|4571)\\d{0,12}',
-      //     cardtype: 'dankort'
-      // },
-      // {
-      //     mask: '0000-0000-0000-0000',
-      //     regex: '^63[7-9]\\d{0,13}',
-      //     cardtype: 'instapayment'
-      // },
+      {
+        mask: "0000-0000-0000-0000",
+        regex: "^(5019|4175|4571)\\d{0,12}",
+        cardtype: "dankort",
+      },
+      {
+        mask: "0000-0000-0000-0000",
+        regex: "^63[7-9]\\d{0,13}",
+        cardtype: "instapayment",
+      },
       {
         mask: "0000 000000 00000",
         regex: "^(?:2131|1800)\\d{0,11}",
@@ -103,11 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         regex: "^(?:5[0678]\\d{0,2}|6304|67\\d{0,2})\\d{0,12}",
         cardtype: "maestro",
       },
-      // {
-      //     mask: '0000-0000-0000-0000',
-      //     regex: '^220[0-4]\\d{0,12}',
-      //     cardtype: 'mir'
-      // },
       {
         mask: "0000 0000 0000 0000",
         regex: "^4\\d{0,15}",
@@ -137,12 +132,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Mask the Expiration Date
   var expirationdate_mask = new IMask(expirationdate, {
-    mask: "MM{/}YY",
-    groups: {
-      YY: new IMask.MaskedPattern.Group.Range([0, 99]),
-      MM: new IMask.MaskedPattern.Group.Range([1, 12]),
-    },
-  });
+    mask: 'MM/YY',
+    blocks: {
+        YY: {
+            mask: IMask.MaskedRange,
+            from: 0,
+            to: 99
+        },
+        MM: {
+            mask: IMask.MaskedRange,
+            from: 1,
+            to: 12
+        }
+    }
+});
 
   //Mask the security code
   var securitycode_mask = new IMask(securitycode, {
@@ -226,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
         swapColor("cyan");
         break;
       default:
-        ccicon.src = "unionpay";
+        ccicon.src = "";
         ccsingle.src = "";
         swapColor("grey");
         break;
@@ -250,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   generatecard.addEventListener("click", function () {
     randomCard();
+    console.log("generatecard work");
   });
 
   // CREDIT CARD IMAGE JS
@@ -315,5 +319,4 @@ document.addEventListener("DOMContentLoaded", function () {
   securitycode.addEventListener("focus", function () {
     document.querySelector(".creditcard").classList.add("flipped");
   });
-
 });
