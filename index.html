@@ -14,36 +14,35 @@
     <link rel="stylesheet" href="css/icofont.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <title>Islamic Web</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header py-3">
         <div class="container">
-            <nav class="navbar navbar-expand-lg ml-sm-3 mx-md-5 p-0">
-                <a href="" class="navbar-brand"><span>Logo</span></a>
-                <button class="navbar-toggler collapsed border border-0" type="button" data-toggle="collapse"
+            <nav class="navbar navbar-expand-lg mx-md-5 p-0">
+                <a href="#" class="navbar-brand"><img src="assets/img/logoo.png" alt="Logo" /></a>
+                <button class="fs-5 fw-medium navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="navbar-collapse ml-auto collapse" id="navbarContent">
+                <div class="collapse navbar-collapse ml-auto" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Projects</a>
+                                aria-haspopup="true" aria-expanded="false">Projects</a>
                             <div class="dropdown-menu" aria-labelledby="projectsDropdown">
                                 <a class="dropdown-item" href="#">Project 1</a>
                                 <a class="dropdown-item" href="#">Project 2</a>
@@ -53,7 +52,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact us</a>
@@ -63,19 +62,26 @@
             </nav>
         </div>
     </header>
+
     <!-- Header End  -->
     <!-- Hero section start  -->
-    <div class="banner ">
+    <div class="banner" style="box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);">
         <div class="hero-banner">
-            <div class="single-banner "
-                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/tasbihh.jpg);">
+            <div class="single-banner" style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(./assets/img/tasbihh.jpg);
+          ">
                 <div class="container">
                     <h3>Remember Allah</h3>
                     <h1>Start Tasbih Counter</h1>
-                    <button class="btn btn-secondary rounded-4-pill">Get Start Now</button>
+                    <button class="fs-6 fw-medium btn btn-secondary rounded-4-pill">
+                        Get Start Now
+                    </button>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- Feature section Start -->
@@ -87,16 +93,17 @@
                     <a class="feature-card" href="#Tasbih" data-toggle="collapse" data-target="#Tasbih"
                         aria-controls="Tasbih" aria-expanded="false" aria-label="Toggle Tasbih section">
                         <div class="feature-content bg-white text-center rounded-4">
-                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/tasbih.png" alt="Tasbih Icon">
+                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/tasbih.png"
+                                alt="Tasbih Icon" />
                             <h4 class="m-2">Tasbih</h4>
                         </div>
                     </a>
                 </div>
                 <div class="col-4 my-3 d-flex justify-content-center align-items-center">
-                    <a class="feature-card"  href="#Hadith" data-toggle="collapse" data-target="#Hadith"
-                    aria-controls="Hadith" aria-expanded="false" aria-label="Toggle Hadith section">
+                    <a class="feature-card" href="#Hadith" data-toggle="collapse" data-target="#Hadith"
+                        aria-controls="Hadith" aria-expanded="false" aria-label="Toggle Hadith section">
                         <div class="feature-content bg-white text-center rounded-4">
-                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/read.png" alt="Hadith Icon">
+                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/read.png" alt="Hadith Icon" />
                             <h4 class="m-2">Hadith</h4>
                         </div>
                     </a>
@@ -104,7 +111,7 @@
                 <div class="col-4 my-3 d-flex justify-content-center align-items-center">
                     <a class="feature-card" href="#">
                         <div class="feature-content bg-white text-center rounded-4">
-                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/prayer.png" alt="Dua Icon">
+                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/prayer.png" alt="Dua Icon" />
                             <h4 class="m-2">Dua</h4>
                         </div>
                     </a>
@@ -113,7 +120,7 @@
                     <a class="feature-card" href="#">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/quran.png"
-                                alt="Al-Quran Icon">
+                                alt="Al-Quran Icon" />
                             <h4 class="m-2">Al-Quran</h4>
                         </div>
                     </a>
@@ -122,7 +129,7 @@
                     <a class="feature-card" href="#">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/wallpaper.png"
-                                alt="Wallpaper Icon">
+                                alt="Wallpaper Icon" />
                             <h4 class="m-2">Wallpaper</h4>
                         </div>
                     </a>
@@ -130,7 +137,8 @@
                 <div class="col-4 my-3 d-flex justify-content-center align-items-center">
                     <a class="feature-card" href="#">
                         <div class="feature-content bg-white text-center rounded-4">
-                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/love.png" alt="Donation Icon">
+                            <img class="img-fluid mx-auto d-block" src="./assets/img/icon/love.png"
+                                alt="Donation Icon" />
                             <h4 class="m-2">Donation</h4>
                         </div>
                     </a>
@@ -140,153 +148,253 @@
             <!-- Tasbih Counter Section -->
             <div class="row collapse" id="Tasbih">
                 <div class="col-12">
-                    <div class="counter-container"
-                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/bg.jpg);">
+                    <div class="counter-container" style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(./assets/img/bg.jpg);
+              ">
                         <h3 class="text-left text-success">Tasbih counter</h3>
                         <div id="counterDisplay" class="counter-display">0</div>
 
-                        <button id="increment"
-                            class="btn btn-success btn-tasbih-add text-uppercase fw-bold mr-md-2">Tasbih</button>
-                        <button id="decrement"
-                            class="btn text-white btn-tasbih-min text-uppercase fw-bold m-0 ">-1</button>
+                        <button id="increment" class="btn btn-success btn-tasbih-add text-uppercase fw-bold mr-md-2">
+                            Tasbih
+                        </button>
+                        <button id="decrement" class="btn text-white btn-tasbih-min text-uppercase fw-bold m-0">
+                            -1
+                        </button>
 
-                        <button id="btnReset"
-                            class="btn btn-danger btn-reset text-uppercase fw-bold m-0 ml-md-2">Reset</button>
+                        <button id="btnReset" class="btn btn-danger btn-reset text-uppercase fw-bold m-0 ml-md-2">
+                            Reset
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Hadith Section  -->
-            <div class="row collapse" id="Hadith">
-                <!-- <div class="col-6">
-                    <a class="border w-100" data-bs-toggle="collapse" href="#belief" role="button" aria-expanded="false"
-                        aria-controls="belief">Belief</a>
-                    <div class="collapse multi-collapse" id="belief">
-                        <div class="card card-body">
-                            Some placeholder content for the first collapse component of this multi-collapse example.
-                            This panel is hidden by default but revealed when the user activates the relevant trigger.
-                        </div>
-                    </div>
-                </div> -->
-                
+            <div class="row" id="Hadith">
                 <div class="col-12">
                     <div class="accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#belief" aria-expanded="true"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#belief" aria-expanded="false"
                                     aria-controls="belief">
-                                   Belief
+                                    Belief
                                 </button>
                             </h2>
-                            <div id="belief" class="accordion-collapse collapse show">
+                            <div id="belief" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <h4 class="accordion-content-header">
+                                        The Six Articles of Faith
+                                    </h4>
+                                    <div class="accordion-text">
+                                        <p>
+                                            <strong>Arabic:</strong> "الايمان بالله وملائكته وكتبه
+                                            ورسله واليوم الآخر والقدر خيره وشره"
+                                        </p>
+                                        <p>
+                                            <strong>English:</strong> "Belief in Allah, His angels,
+                                            His books, His messengers, the Day of Judgment, and
+                                            predestination, both good and evil."
+                                        </p>
+                                        <p>
+                                            <strong>Source:</strong> Sahih Bukhari and Sahih Muslim
+                                        </p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header">The Importance of Belief</h4>
+                                    <div class="accordion-text">
+                                        <p>
+                                            <strong>Arabic:</strong> "من لم يؤمن بالقدر خيرا وشره
+                                            فليس منا"
+                                        </p>
+                                        <p>
+                                            <strong>English:</strong> "Whoever does not believe in
+                                            predestination, both good and evil, is not of us."
+                                        </p>
+                                        <p><strong>Source:</strong> Sahih Muslim</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header">Belief in the Unseen</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "الايمان بالغيب"</p>
+                                        <p><strong>English:</strong> "Belief in the unseen."</p>
+                                        <p><strong>Source:</strong> Sahih Muslim</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#revelation" aria-expanded="false"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#revelation" aria-expanded="false"
                                     aria-controls="revelation">
                                     Revelation
                                 </button>
                             </h2>
                             <div id="revelation" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    
+                                    <h4 class="accordion-content-header">
+                                        Revelations to the Prophet Muhammad (ﷺ)
+                                    </h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إنما أنت منذر"
+                                            <p><strong>English:</strong> "You are only a warner."
+                                                <p><strong>Source:</strong> Surah Al-Ahzab, Verse 44</p>
+
+                                                <p><strong>Arabic:</strong> "وما ينطق عن الهوى"
+                                                    <p><strong>English:</strong> "Nor does he speak out of [mere]
+                                                        inclination."
+                                                        <p><strong>Source:</strong> Surah An-Najm, Verse 3</p>
+
+                                                        <p><strong>Arabic:</strong> "إنما هو وحي يوحى"
+                                                            <p><strong>English:</strong> "It is not but inspiration
+                                                                revealed."
+                                                                <p><strong>Source:</strong> Surah An-Najm, Verse 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#knowledge" aria-expanded="false"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#knowledge" aria-expanded="false"
                                     aria-controls="knowledge">
                                     Knowledge
                                 </button>
                             </h2>
                             <div id="knowledge" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    
+                                    <h4 class="accordion-content-header"> The Quran as a Guidance </h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو هدى"
+                                            <p><strong>English:</strong> "Indeed, this Quran is a guidance."
+                                                <p><strong>Source:</strong> Surah Al-Baqarah, Verse 2</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Light</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو نور"
+                                            <p><strong>English:</strong> "Indeed, this Quran is a light."
+                                                <p><strong>Source:</strong> Surah Al-Ma'idah, Verse 15</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Healing </h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو شفاء"
+                                            <p><strong>English:</strong> "Indeed, this Quran is a healing."
+                                                <p><strong>Source:</strong> Surah Al-Isra, Verse 82</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Reminder</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو ذكرى"
+                                            <p><strong>English:</strong> "Indeed, this Quran is a
+                                                reminder."
+                                                <p><strong>Source:</strong> Surah Al-Qamar, Verse 51</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Criterion</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو فصل الخطاب"
+                                            <p><strong>English:</strong> "Indeed, this Quran is a
+                                                criterion."
+                                                <p><strong>Source:</strong> Surah Al-An'am, Verse
+                                                    114</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Mercy</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو رحمة"
+                                            <p><strong>English:</strong> "Indeed, this Quran is
+                                                a mercy."
+                                                <p><strong>Source:</strong> Surah Al-Anbiya,
+                                                    Verse 107</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a Truth</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو حق"
+                                            <p><strong>English:</strong> "Indeed, this Quran
+                                                is a truth."
+                                                <p><strong>Source:</strong> Surah Al-Hajj,
+                                                    Verse 52</p>
+                                    </div>
+
+                                    <h4 class="accordion-content-header"> The Quran as a
+                                        Wisdom</h4>
+                                    <div class="accordion-text">
+                                        <p><strong>Arabic:</strong> "إن هذا القرآن هو
+                                            حكمة"
+                                            <p><strong>English:</strong> "Indeed, this
+                                                Quran is a wisdom."
+                                                <p><strong>Source:</strong> Surah
+                                                    Al-Furqan, Verse 54</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#prayers" aria-expanded="true"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#prayers" aria-expanded="false"
                                     aria-controls="prayers">
                                     Prayers(Salat)
                                 </button>
                             </h2>
-                            <div id="prayers" class="accordion-collapse collapse show">
+                            <div id="prayers" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the first item's accordion body.</strong> It
+                                    is shown by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#timesOfThePrayers" aria-expanded="false"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#timesOfThePrayers" aria-expanded="false"
                                     aria-controls="timesOfThePrayers">
                                     Times of the Prayers
                                 </button>
                             </h2>
                             <div id="timesOfThePrayers" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                    
-                                </div>
+                                <div class="accordion-body"></div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#callToPrayers" aria-expanded="false"
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#callToPrayers" aria-expanded="false"
                                     aria-controls="callToPrayers">
                                     Call to Prayers(Adhaan)
                                 </button>
                             </h2>
                             <div id="callToPrayers" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                    
-                                </div>
+                                <div class="accordion-body"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
     </div>
-
 
     <!-- Feature section Start -->
     <div class="salat pb-5">
         <div class="container-fluid px-5">
             <div class="prayer-time bg-secondary p-4 my-5 rounded">
                 <div class="row">
-                    <div class="col-8 text-left text-uppercase"><span class="text-white fw-bold">Prayer time in</span>
+                    <div class="col-8 text-left text-uppercase">
+                        <span class="text-white fw-bold">Prayer time in</span>
                         <span class="h3">Dhaka</span>
                     </div>
                     <div class="col-4 text-right"><span>12-12-2024</span></div>
@@ -300,11 +408,12 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control bg-white" id="searchPrayerAreaMain"
-                                placeholder="Type your location..." autocomplete="off">
+                                placeholder="Type your location..." autocomplete="off" />
                             <div class="input-group-append rounded bg-white">
                                 <div class="col text-center align-items-center d-flex">
-                                    <button type="button"
-                                        class="btn btn-search d-none d-md-block px-5 py-2">Search</button>
+                                    <button type="button" class="btn btn-search d-none d-md-block px-5 py-2">
+                                        Search
+                                    </button>
                                 </div>
                             </div>
                         </div>
