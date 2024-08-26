@@ -98,12 +98,12 @@
     </div>
     <!-- Feature section Start -->
     <div class="feature py-4">
-        <div class="container">
+        <div class="container" id="accordionFeature">
             <!-- Feature Boxes -->
             <div class="row mb-3">
                 <!-- Feature Cards -->
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#Tasbih" data-toggle="collapse" data-target="#Tasbih"
+                    <a class="feature-card" href="#Tasbih" data-bs-toggle="collapse" data-bs-target="#Tasbih"
                         aria-controls="Tasbih" aria-expanded="false" aria-label="Toggle Tasbih section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/tasbih.png"
@@ -113,7 +113,7 @@
                     </a>
                 </div>
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#Hadith" data-toggle="collapse" data-target="#Hadith"
+                    <a class="feature-card" href="#Hadith" data-bs-toggle="collapse" data-bs-target="#Hadith"
                         aria-controls="Hadith" aria-expanded="false" aria-label="Toggle Hadith section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/read.png" alt="Hadith Icon" />
@@ -122,7 +122,7 @@
                     </a>
                 </div>
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#Dua" data-toggle="collapse" data-target="#Dua" aria-controls="Dua"
+                    <a class="feature-card" href="#Dua" data-bs-toggle="collapse" data-bs-target="#Dua" aria-controls="Dua"
                         aria-expanded="false" aria-label="Toggle Dua section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/prayer.png" alt="Dua Icon" />
@@ -131,7 +131,7 @@
                     </a>
                 </div>
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#AlQuran" data-toggle="collapse" data-target="#Quran"
+                    <a class="feature-card" href="#AlQuran" data-bs-toggle="collapse" data-bs-target="#Quran"
                         aria-controls="Quran" aria-expanded="false" aria-label="Toggle Quran section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/quran.png"
@@ -141,7 +141,7 @@
                     </a>
                 </div>
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#Wallpaper" data-toggle="collapse" data-target="#Wallpaper"
+                    <a class="feature-card" href="#Wallpaper" data-bs-toggle="collapse" data-bs-target="#Wallpaper"
                         aria-controls="Wallpaper" aria-expanded="false" aria-label="Toggle Wallpaper section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/wallpaper.png"
@@ -151,7 +151,7 @@
                     </a>
                 </div>
                 <div class="col-4 my-sm-3 py-1 d-flex justify-content-center align-items-center">
-                    <a class="feature-card" href="#Donation" data-toggle="collapse" data-target="#Donation"
+                    <a class="feature-card" href="#Donation" data-bs-toggle="collapse" data-bs-target="#Donation"
                         aria-controls="Donation" aria-expanded="false" aria-label="Toggle Donation section">
                         <div class="feature-content bg-white text-center rounded-4">
                             <img class="img-fluid mx-auto d-block" src="./assets/img/icon/love.png"
@@ -163,7 +163,7 @@
             </div>
 
             <!-- Tasbih Counter Section -->
-            <div class="row collapse" id="Tasbih">
+            <div class="row collapse" id="Tasbih" data-bs-parent="#accordionFeature">
                 <div class="col-12">
                     <div class="counter-container" style="
                 background-image: linear-gradient(
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <!-- Hadith Section  -->
-            <div class="row collapse" id="Hadith">
+            <div class="row collapse" id="Hadith" data-bs-parent="#accordionFeature">
                 <div class="col-12">
                     <div class="accordion" id="accordionHadith">
                         <div class="accordion-item">
@@ -403,7 +403,7 @@
                 </div>
             </div>
             <!-- Dua Section  -->
-            <div class="row collapse" id="Dua">
+            <div class="row collapse" id="Dua" data-bs-parent="#accordionFeature">
                 <div class="col-12">
                     <div class="accordion" id="accordionDua">
                         <div class="accordion-item">
@@ -494,7 +494,7 @@
                 </div>
             </div>
             <!-- Donation  -->
-            <div class="donation row collapse" id="Donation">
+            <div class="donation row collapse" id="Donation" data-bs-parent="#accordionFeature">
                 <div class="col-12">
                     <h4 class="text-center fw-medium">Payment Information</h4>
                 </div>
