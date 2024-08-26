@@ -33,11 +33,6 @@ button.btn:focus {
     width: 200px;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: none;
-}
-
 /* Nav-link hover effect */
 .navbar-nav .nav-link {
     position: relative;
@@ -276,7 +271,11 @@ input:focus {
 .btn-tasbih-min:focus {
     background: #0693e3 !important;
 }
-
+@media (max-width: 600px) {
+    .btn-tasbih-min {
+        left: 25%;
+    }
+}
 .btn-reset {
     font-size: 1rem;
     padding: 10px 20px;

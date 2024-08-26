@@ -29,20 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     counterDisplay.textContent = count;
   });
 
-  document.querySelectorAll(".accordion-button").forEach((button) => {
-    button.addEventListener("click", function () {
-      // If the clicked button is collapsed, remove the collapsed class and update aria-expanded
-      if (this.classList.contains("collapsed")) {
-        this.classList.remove("collapsed");
-      }
-      // Handle other buttons
-      document.querySelectorAll(".accordion-button").forEach((otherButton) => {
-        if (otherButton !== this) {
-          otherButton.classList.add("collapsed");
-        }
-      });
-    });
-  });
   // ==================== CARD  ===============================  //
   const name = document.getElementById("name");
   const cardnumber = document.getElementById("cardnumber");

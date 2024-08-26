@@ -24,7 +24,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg mx-md-5 p-0">
                 <a href="#" class="navbar-brand"><img src="assets/img/logoo.png" alt="Logo" /></a>
-                <button class="fs-5 fw-medium navbar-toggler collapsed" type="button" data-toggle="collapse"
+                <button class="fs-5 shadow-none fw-medium navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -62,6 +62,7 @@
             </nav>
         </div>
     </header>
+    <!-- App promotion  -->
     <section class="app my-4">
         <div class="container">
             <div class="row">
@@ -71,7 +72,8 @@
                             <h2 class="text-dark fs-3 fw-bold lh-1">Missed your prayers again? Athan app can help.</h2>
                             <p class="text-dark  fw-medium">Get Prayer Times alert on your phone for free.</p>
                             <button class="btn btn-success" type="button">Download App</button>
-                            <p class="starText text-dark">* We respect the General Data Protection Regulation and the California
+                            <p class="starText text-dark">* We respect the General Data Protection Regulation and the
+                                California
                                 Consumer Privacy Act guidelines</p>
                         </div>
                         <div class="app-img"></div>
@@ -80,7 +82,6 @@
             </div>
         </div>
     </section>
-    <!-- Header End  -->
     <!-- Hero section start  -->
     <div class="banner d-none">
         <div class="hero-banner">
@@ -95,7 +96,6 @@
             </div>
         </div>
     </div>
-
     <!-- Feature section Start -->
     <div class="feature py-4">
         <div class="container">
@@ -188,20 +188,18 @@
                     </div>
                 </div>
             </div>
-
             <!-- Hadith Section  -->
             <div class="row collapse" id="Hadith">
                 <div class="col-12">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion" id="accordionHadith">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#belief" aria-expanded="false"
-                                    aria-controls="belief">
+                                <button class="fs-5 fw-medium accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#belief" aria-expanded="true" aria-controls="belief">
                                     Belief
                                 </button>
                             </h2>
-                            <div id="belief" class="accordion-collapse collapse">
+                            <div id="belief" class="accordion-collapse collapse show" data-bs-parent="#accordionHadith">
                                 <div class="accordion-body">
                                     <h4 class="accordion-content-header">
                                         The Six Articles of Faith
@@ -251,7 +249,7 @@
                                     Revelation
                                 </button>
                             </h2>
-                            <div id="revelation" class="accordion-collapse collapse">
+                            <div id="revelation" class="accordion-collapse collapse" data-bs-parent="#accordionHadith">
                                 <div class="accordion-body">
                                     <h4 class="accordion-content-header">
                                         Revelations to the Prophet Muhammad (ﷺ)
@@ -282,7 +280,7 @@
                                     Knowledge
                                 </button>
                             </h2>
-                            <div id="knowledge" class="accordion-collapse collapse">
+                            <div id="knowledge" class="accordion-collapse collapse" data-bs-parent="#accordionHadith">
                                 <div class="accordion-body">
                                     <h4 class="accordion-content-header"> The Quran as a Guidance </h4>
                                     <div class="accordion-text">
@@ -361,7 +359,7 @@
                                     Prayers(Salat)
                                 </button>
                             </h2>
-                            <div id="prayers" class="accordion-collapse collapse">
+                            <div id="prayers" class="accordion-collapse collapse" data-bs-parent="#accordionHadith">
                                 <div class="accordion-body">
                                     <strong>This is the first item's accordion body.</strong> It
                                     is shown by default, until the collapse plugin adds the
@@ -383,7 +381,8 @@
                                     Times of the Prayers
                                 </button>
                             </h2>
-                            <div id="timesOfThePrayers" class="accordion-collapse collapse">
+                            <div id="timesOfThePrayers" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionHadith">
                                 <div class="accordion-body"></div>
                             </div>
                         </div>
@@ -395,14 +394,105 @@
                                     Call to Prayers(Adhaan)
                                 </button>
                             </h2>
-                            <div id="callToPrayers" class="accordion-collapse collapse">
+                            <div id="callToPrayers" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionHadith">
                                 <div class="accordion-body"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- Dua Section  -->
+            <div class="row collapse" id="Dua">
+                <div class="col-12">
+                    <div class="accordion" id="accordionDua">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#belief" aria-expanded="true" aria-controls="belief">
+                                    Belief
+                                </button>
+                            </h2>
+                            <div id="belief" class="accordion-collapse collapse show" data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- ============================== -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#revelation" aria-expanded="false"
+                                    aria-controls="revelation">
+                                    Revelation
+                                </button>
+                            </h2>
+                            <div id="revelation" class="accordion-collapse collapse" data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- ========================= -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#knowledge" aria-expanded="false"
+                                    aria-controls="knowledge">
+                                    Knowledge
+                                </button>
+                            </h2>
+                            <div id="knowledge" class="accordion-collapse collapse" data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- ================================== -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#prayers" aria-expanded="false"
+                                    aria-controls="prayers">
+                                    Prayers(Salat)
+                                </button>
+                            </h2>
+                            <div id="prayers" class="accordion-collapse collapse" data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- =========================== -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#timesOfThePrayers" aria-expanded="false"
+                                    aria-controls="timesOfThePrayers">
+                                    Times of the Prayers
+                                </button>
+                            </h2>
+                            <div id="timesOfThePrayers" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- ============================ -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="fs-5 fw-medium accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#callToPrayers" aria-expanded="false"
+                                    aria-controls="callToPrayers">
+                                    Call to Prayers(Adhaan)
+                                </button>
+                            </h2>
+                            <div id="callToPrayers" class="accordion-collapse collapse" data-bs-parent="#accordionDua">
+                                <div class="accordion-body">
+                                    <!-- =========================== -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Donation  -->
             <div class="donation row collapse" id="Donation">
                 <div class="col-12">
@@ -571,7 +661,7 @@
                     <div class="col-12">
                         <div class="input-group rounded my-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text bg-white">
+                                <span class="input-group-text border-0 bg-white">
                                     <i class="icofont-location-pin text-success fa-2x px-2"></i>
                                 </span>
                             </div>
